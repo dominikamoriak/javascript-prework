@@ -9,7 +9,11 @@ function clearMessages(){
 }
 
 
-var buttonTest, buttonRock, buttonPaper, buttonScissors;
+const 
+  buttonTest, 
+  buttonRock, 
+  buttonPaper, 
+  buttonScissors;
 
 buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
@@ -25,7 +29,14 @@ function buttonClicked(argButtonName) {
 console.log(argButtonName + ' został kliknięty');
 
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+const 
+  argMoveId, 
+  argPlayerMove, 
+  argComputerMove, 
+  computerMove, 
+  playerMove, 
+  randomNumber, 
+  playerInput;
 
 /**
  * Describe this function...
