@@ -8,8 +8,6 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-const buttonTest = document.getElementById('button-test');
-  buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 const
   buttonRock = document.getElementById('button-rock');
   buttonRock.addEventListener('click', function(){ buttonClicked('Guzik Kamień'); });
