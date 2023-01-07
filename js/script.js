@@ -10,13 +10,13 @@ function clearMessages(){
 
 const
   buttonRock = document.getElementById('button-rock');
-  buttonRock.addEventListener('click', function(){ buttonClicked('Guzik Kamień'); });
+  buttonRock.addEventListener('click', function(){ buttonClicked('1'); });
 const
   buttonPaper = document.getElementById('button-paper');
-  buttonPaper.addEventListener('click', function(){ buttonClicked('Guzik Papier'); });
+  buttonPaper.addEventListener('click', function(){ buttonClicked('2'); });
 const
   buttonScissors = document.getElementById('button-scissors');
-  buttonScissors.addEventListener('click', function(){ buttonClicked('Guzik Nożyce'); });
+  buttonScissors.addEventListener('click', function(){ buttonClicked('3'); });
 
 /**
  * Describe this function...
