@@ -10,13 +10,13 @@ function clearMessages(){
 
 const
   buttonRock = document.getElementById('button-rock');
-  buttonRock.addEventListener('click', function(){ buttonClicked('1'); });
+  buttonRock.addEventListener('click', function(){ buttonClicked(1); });
 const
   buttonPaper = document.getElementById('button-paper');
-  buttonPaper.addEventListener('click', function(){ buttonClicked('2'); });
+  buttonPaper.addEventListener('click', function(){ buttonClicked(2); });
 const
   buttonScissors = document.getElementById('button-scissors');
-  buttonScissors.addEventListener('click', function(){ buttonClicked('3'); });
+  buttonScissors.addEventListener('click', function(){ buttonClicked(3); });
 
 /**
  * Describe this function...
@@ -30,6 +30,7 @@ function buttonClicked(argButtonName) {
 
   const
     playerMove = argButtonName;
+    playerMove = getMoveName(playerInput);
     console.log('wybór ruchu gracza to: ' + playerInput);
     console.log('ruch gracza to: ' + playerMove);
 
@@ -65,9 +66,11 @@ function getMoveName(argMoveId) {
  */
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-  if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
-  } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
-  } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
+  if (
+    (argPlayerMove == 'papier' && argComputerMove == 'kamień')
+    (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') ||
+    (argPlayerMove == 'nożyce' && argComputerMove == 'papier') ||
+   ) {
     printMessage('Wygrywasz!');
   } else if (argPlayerMove == argComputerMove) {
     printMessage('Remis!');
@@ -77,4 +80,3 @@ function displayResult(argPlayerMove, argComputerMove) {
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
 }
-
