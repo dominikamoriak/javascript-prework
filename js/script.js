@@ -67,9 +67,9 @@ function getMoveName(argMoveId) {
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (
-    (argPlayerMove == 'papier' && argComputerMove == 'kamień')
+    (argPlayerMove == 'papier' && argComputerMove == 'kamień') ||
     (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') ||
-    (argPlayerMove == 'nożyce' && argComputerMove == 'papier') ||
+    (argPlayerMove == 'nożyce' && argComputerMove == 'papier')
    ) {
     printMessage('Wygrywasz!');
   } else if (argPlayerMove == argComputerMove) {
