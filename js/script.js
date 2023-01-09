@@ -29,7 +29,6 @@ function buttonClicked(argButtonName) {
     playerInput = argButtonName;
 
   const
-    playerMove = argButtonName;
     playerMove = getMoveName(playerInput);
     console.log('wybór ruchu gracza to: ' + playerInput);
     console.log('ruch gracza to: ' + playerMove);
